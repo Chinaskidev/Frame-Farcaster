@@ -121,7 +121,7 @@ app.frame('/start', (c) => {
 app.frame('/izalco', (c) => {
   const { buttonValue, inputText, status } = c
     return c.res({
-    image: "public/Volcán_de_Izalco_JR.png",
+    image: "/Volcán_de_Izalco_JR.png",
 
 
 
@@ -135,7 +135,7 @@ app.frame('/izalco', (c) => {
 app.frame('/santa_ana', (c) => {
   const { buttonValue, inputText, status } = c
     return c.res({
-    image: "public/santa ana.png",
+    image: "/santa ana.png",
 
 
     intents: [
@@ -149,7 +149,7 @@ app.frame('/santa_ana', (c) => {
 app.frame('/boqueron', (c) => {
   const { buttonValue, inputText, status } = c
     return c.res({
-    image: "public/boqueron.png",
+    image: "/boqueron.png",
 
 
 
