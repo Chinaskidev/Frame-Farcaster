@@ -1,4 +1,4 @@
-import { Button, Frog, TextInput } from 'frog'
+import { Button, Frog,} from 'frog'
 import { devtools } from 'frog/dev'
 import { serveStatic } from 'frog/serve-static'
 // import { neynar } from 'frog/hubs'
@@ -17,7 +17,7 @@ export const app = new Frog({
 })
 
 app.frame('/', (c) => {
-  const { buttonValue, inputText, status } = c
+  const { status } = c
     return c.res({
     image: "/negro.jpg",
     intents: [
@@ -29,7 +29,7 @@ app.frame('/', (c) => {
 })
 
 app.frame('/start', (c) => {
-  const { buttonValue, inputText, status } = c
+  const { status } = c
     return c.res({
     image: (
       
@@ -81,7 +81,7 @@ app.frame('/start', (c) => {
 
 
 app.frame('/izalco', (c) => {
-  const { buttonValue, inputText, status } = c
+  const { status } = c
     return c.res({
     image: "/Volcán_de_Izalco_JR.png",
 
@@ -95,7 +95,7 @@ app.frame('/izalco', (c) => {
 })
 
 app.frame('/santa_ana', (c) => {
-  const { buttonValue, inputText, status } = c
+  const {  status } = c
     return c.res({
     image: "/santa ana.png",
 
@@ -109,7 +109,7 @@ app.frame('/santa_ana', (c) => {
 
 
 app.frame('/boqueron', (c) => {
-  const { buttonValue, status } = c
+  const { status } = c
     return c.res({
     image: "/boqueron.png",
 
