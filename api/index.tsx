@@ -19,7 +19,7 @@ export const app = new Frog({
 app.frame('/', (c) => {
   const { buttonValue, inputText, status } = c
     return c.res({
-    image: "/sivarletrasvolcano.png",
+    image: "/negro.jpg",
     intents: [
       
       <Button action='/start' value="GUESS?">start</Button>,
@@ -109,7 +109,7 @@ app.frame('/santa_ana', (c) => {
 
 
 app.frame('/boqueron', (c) => {
-  const { buttonValue, inputText, status } = c
+  const { buttonValue, status } = c
     return c.res({
     image: "/boqueron.png",
 
@@ -118,7 +118,7 @@ app.frame('/boqueron', (c) => {
     intents: [
       
       <Button.Link href='https://warpcast.com/charlesdev'>Tip's</Button.Link>,
-      <Button.Transaction target='0x3081a193234AE3FB1e396fb3Fae6419ea72f2D60'>Mint</Button.Transaction>,
+      <Button.Link href='https://nftdegen.lol/nft/collection?id=0x8F3B850CEB23Cd98de325629852047F36c9969d9'>Mint</Button.Link>,
       <Button.Reset>Back</Button.Reset>,
     ],
   })
