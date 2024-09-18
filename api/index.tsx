@@ -18,46 +18,8 @@ export const app = new Frog({
 
 app.frame('/', (c) => {
   const { buttonValue, inputText, status } = c
-  const sivar = inputText || buttonValue
-  return c.res({
-    image: (
-      
-      <div
-        style={{
-          alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
-          backgroundSize: '100% 100%',
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          height: '100%',
-          justifyContent: 'center',
-          textAlign: 'center',
-          width: '100%',
-        }}
-      >
-        <div
-          style={{
-            color: 'white',
-            fontSize: 48,
-            fontStyle: 'normal',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            marginTop: 30,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          {status === 'response'
-            ? `${sivar ? ` ${sivar.toUpperCase()}!!` : ''}`
-            : 'GUESS'}
-            
-        </div>
-      </div>
-    ),
+    return c.res({
+    image: "/sivarletrasvolcano.png",
     intents: [
       
       <Button action='/start' value="GUESS?">start</Button>,
@@ -155,7 +117,8 @@ app.frame('/boqueron', (c) => {
 
     intents: [
       
-      <Button.Link href='https://zora.co/collect/base:0x1795c993551ba7c9112fb4a52d10a33b268a69aa/7?referrer=0x00CB123EA62942bDa36aDf04f2E91Dc38D4Fd4Cc'>MINT</Button.Link>,
+      <Button.Link href='https://warpcast.com/charlesdev'>Tip's</Button.Link>,
+      <Button.Transaction target='0x3081a193234AE3FB1e396fb3Fae6419ea72f2D60'>Mint</Button.Transaction>,
       <Button.Reset>Back</Button.Reset>,
     ],
   })
@@ -170,3 +133,7 @@ devtools(app, isProduction ? { assetsPath: '/.frog' } : { serveStatic })
 
 export const GET = handle(app)
 export const POST = handle(app)
+
+
+
+
